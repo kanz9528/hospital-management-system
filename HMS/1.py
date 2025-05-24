@@ -52,11 +52,11 @@ def view_appointment():
         print('\n\n')
     df = pd.DataFrame(li)
     df.columns = ['patient_id', 'doctor_id', 'date', 'time']
-    df.to_csv('C:\\New folder\\hospital3.csv')
+    df.to_csv('E:\\New folder\\hospital3.csv')
     plt.bar(df['patient_id'], df['time'])
     plt.xlabel('patient_id')
     plt.ylabel('time')
-    plt.savefig('C:\\New folder\\graph3.jpg')
+    plt.savefig('E:\\New folder\\graph3.jpg')
     plt.show()
     print(appointments)
 
@@ -76,11 +76,11 @@ def view_patient():
     df = pd.DataFrame(li)
     df.columns = ['name', 'age', 'gender', 'disease']
 
-    df.to_csv('C:\\New folder\\hospital1.csv')
+    df.to_csv('E:\\New folder\\hospital1.csv')
     plt.bar(df['disease'], df['age'])
     plt.xlabel('disease')
     plt.ylabel('age')
-    plt.savefig('C:\\New folder\\graph1.jpg')
+    plt.savefig('E:\\New folder\\graph1.jpg')
     plt.show()
     print(patients)
 
@@ -100,11 +100,11 @@ def view_doctor():
 
     df = pd.DataFrame(li)
     df.columns = ['name', 'specialization', 'fee']
-    df.to_csv('C:\\New folder\\hospital2.csv')
+    df.to_csv('E:\\New folder\\hospital2.csv')
     plt.bar(df['specialization'], df['fee'])
     plt.xlabel('specialization')
     plt.ylabel('fee')
-    plt.savefig('C:\\New folder\\graph2.jpg')
+    plt.savefig('E:\\New folder\\graph2.jpg')
     plt.show()
     print(doctors)
 
